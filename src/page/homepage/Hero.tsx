@@ -3,7 +3,7 @@ export default function Hero() {
 
   return (
     <div className="flex justify-start items-center gap-10">
-      <div className="h-40 w-40 ml-35">
+      <div className="h-40 w-40">
         <img 
           src="/profile.png" 
           alt="Profile-photo"
