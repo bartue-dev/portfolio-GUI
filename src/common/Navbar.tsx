@@ -3,14 +3,14 @@ export default function Navbar() {
   
   const links = [
     "Home",
-    "About",
     "Projects",
+    "About",
     "Contact"
   ]
 
 
   return (
-    <div>
+    <div className="sticky top-3">
       <nav 
         className="bg-white w-100 m-auto shadow-sm rounded-full py-2 font-semibold text-sm"
       >
