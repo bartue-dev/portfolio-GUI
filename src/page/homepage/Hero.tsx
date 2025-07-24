@@ -11,8 +11,8 @@ export default function Hero() {
         />
         </div>
         <div>
-          <h1 className="font-semibold text-2xl">Bartue.dev | Full Stack Web Developer</h1>
-          <p className="text-base mt-2">I am a full stack developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma</p>
+          <h1 className="font-semibold text-2xl">Bartue.dev | Software Developer</h1>
+          <p className="text-base mt-2">I am a Software developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma</p>
           
           <div className="flex items-center gap-3 mt-3">
             <img 
