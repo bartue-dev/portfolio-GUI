@@ -9,10 +9,20 @@ export default function ProjectCard() {
       {projects.map((project: ProjectTypes, i: number) => (
         <div 
           key={i} 
-          className="w-80 min-h-80 rounded-md shadow flex flex-col gap-5 p-4 hover:shadow-md hover:border-0"
+          className="w-90 min-h-80 rounded-md shadow border border-gray-100 flex flex-col gap-5 p-4 hover:shadow-md hover:border-gray-200"
         >
 
-        <img src="" alt="project-image" className="w-full h-60 border"/>
+        {(project?.images ?? []).length > 0
+          ?  <div className="h-50 w-full border border-gray-100">
+                <img 
+                  key={i} 
+                  src={(project?.images ?? [])[1]} 
+                  alt="project-image" 
+                  className="w-full h-full object-cover border-gray-400"
+                />
+              </div>
+          : <p className="w-full h-full border border-gray-100 rounded-md text-center italic">No image provided</p>}
+        
 
         <h1 className="font-semibold"> {project.title} </h1>
 
