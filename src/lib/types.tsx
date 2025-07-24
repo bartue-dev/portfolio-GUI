@@ -8,6 +8,11 @@ export type ProjectTypes = {
     backend?: string,
   },
   status?: string
-  link?: string
+  link?: string,
+  images?: string[]
+}
 
+export type LinksTypes = {
+  name: string,
+  route: string
 }
