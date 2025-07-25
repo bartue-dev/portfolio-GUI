@@ -2,8 +2,8 @@ export type ProjectTypes = {
   id: number,
   title: string,
   about?: string,
-  frontend?: string[], 
-  backend?: string[],
+  frontend?: {src: string, tip: string}[], 
+  backend?: {src: string, tip: string}[],
   code?: {
     frontend?: string,
     backend?: string,
