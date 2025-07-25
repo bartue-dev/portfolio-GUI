@@ -1,7 +1,9 @@
 import { Link } from "react-router"
 import { links } from "../data/data"
+import { useLocation } from "react-router"
 
 export default function Navbar() {
+  const {pathname} = useLocation();  
 
   return (
     <div className="sticky top-3 z-1">
@@ -13,7 +15,7 @@ export default function Navbar() {
             <Link 
               to={link.route}
               key={i}
-              className="hover:text-emerald-600"
+              className={`${pathname === link.route && "text-emerald-600"} hover:text-emerald-600`}
             >
               {link.name}
             </Link>
