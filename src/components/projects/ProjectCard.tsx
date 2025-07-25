@@ -1,5 +1,5 @@
 import { projects } from  "../../data/data"
-import { Link as LinkIcon } from 'lucide-react';
+import { Link as LinkIcon, ImageOff  } from 'lucide-react';
 import { Link } from "react-router";
 
 export default function ProjectCard() {
@@ -16,12 +16,16 @@ export default function ProjectCard() {
           ?  <div className="h-50 w-full border border-gray-100">
                 <img 
                   key={i} 
-                  src={(project?.images ?? [])[1]} 
+                  src={(project?.images ?? [])[0]} 
                   alt="project-image" 
                   className="w-full h-full object-cover border-gray-400"
                 />
               </div>
-          : <p className="w-full h-full border border-gray-100 rounded-md text-center italic">No image provided</p>}
+          : <div 
+              className="w-full h-50 border border-gray-100 rounded-md justify-items-center"
+            >
+              <ImageOff size="100%"/>
+            </div>}
         
 
         <h1 className="font-semibold"> {project.title} </h1>
@@ -29,12 +33,16 @@ export default function ProjectCard() {
         <div>
           {((project?.frontend ?? []).length > 0 || (project?.backend ?? []).length > 0)
             &&  <div className="flex items-center gap-3">
-                  {project?.frontend?.map((img: string, i) => (
-                    <img src={img} alt="icon" key={i} className="w-8"/>
+                  {project?.frontend?.map((img, i) => (
+                    <div className="tooltip" data-tip={img.tip}>
+                      <img src={`/${img.src}`} alt="icon" key={i} className="w-8"/>
+                    </div>
                   ))}
 
-                  {project?.backend?.map((img: string, i) => (
-                    <img src={img} alt="icon" key={i} className="w-8"/>
+                  {project?.backend?.map((img, i) => (
+                    <div className="tooltip" data-tip={img.tip}>
+                      <img src={`/${img.src}`} alt="icon" key={i} className="w-8"/>
+                    </div>
                   ))}
                 </div>} 
         </div>
@@ -45,7 +53,7 @@ export default function ProjectCard() {
           <LinkIcon
             size={15}
           />
-          <h1 className="text-sm">View Project</h1>
+          <h1 className="text-sm font-semibold hover:text-emerald-600">View Project</h1>
         </Link>
          
           
