@@ -3,11 +3,11 @@ export default function Hero() {
 
   return (
     <div className="flex justify-start items-center gap-10">
-      <div className="h-40 w-40">
+      <div className="h-40 w-40 rounded-full">
         <img 
           src="/profile.png" 
           alt="Profile-photo"
-          className="w-full h-full rounded-full"   
+          className="w-full h-full rounded-full object-cover"   
         />
         </div>
         <div>
@@ -15,6 +15,13 @@ export default function Hero() {
           <p className="text-base mt-2">I am a Software developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma</p>
           
           <div className="flex items-center gap-3 mt-3">
+              
+            <img 
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
+              className="w-10"  
+            />
+          
+
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" 
               className="w-10"
