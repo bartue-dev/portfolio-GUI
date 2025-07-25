@@ -1,4 +1,5 @@
 export type ProjectTypes = {
+  id: number,
   title: string,
   about?: string,
   frontend?: string[], 
