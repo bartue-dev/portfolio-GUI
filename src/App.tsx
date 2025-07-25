@@ -1,6 +1,7 @@
 import { Outlet } from "react-router"
 import Navbar from "./common/Navbar"
 import ScrollToTop from "./common/ScrollToTop"
+import Footer from "./common/Footer"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div className="px-60 mt-15">
           <Outlet/>
         </div>
-        <h1>This Footer</h1>
+        <Footer/>
       </div>   
     </div>
    
