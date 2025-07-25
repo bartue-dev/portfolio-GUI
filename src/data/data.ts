@@ -21,6 +21,7 @@ export const links: LinksTypes[] = [
 
 export const projects: ProjectTypes[] = [
     {
+      id: 1,
       title: "Car Rental App",
       about: "full stack project",
       frontend: ["icons8-react-js-48.png", "icons8-tailwind-css-48.png"],
@@ -46,6 +47,7 @@ export const projects: ProjectTypes[] = [
       ]
     },
     {
+      id: 2,
       title: "File Uploader",
       about: "Basically a file manager. Used supabase storage to store files and it is Server side rendering app",
       backend: ["icons8-express-js-50.png", "icons8-prisma-orm-48.png", "icons8-supabase-48.png", "passport-seeklogo.png", "express-validator.svg", "icons8-tailwind-css-48.png"],
@@ -61,6 +63,7 @@ export const projects: ProjectTypes[] = [
       ]
     },
     {
+      id: 3,
       title: "Cv Generator App",
       about: "An app that can build a downloadable cv/resume",
       frontend: ["icons8-react-js-48.png"],
@@ -74,6 +77,7 @@ export const projects: ProjectTypes[] = [
       ]
     },
     {
+      id: 4,
       title: "Blog API",
       about: "Build my first API",
       backend: ["icons8-express-js-50.png", "icons8-prisma-orm-48.png", "icons8-jwt-48.png", "express-validator.svg"],
