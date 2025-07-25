@@ -1,9 +1,22 @@
 import { Link } from "react-router"
 import { links } from "../data/data"
 import { useLocation } from "react-router"
+import { useEffect } from "react";
 
 export default function Navbar() {
-  const {pathname} = useLocation();  
+  const {pathname} = useLocation();
+  
+
+  useEffect(()=> {
+    const title = pathname.split("/")[1];
+    if (pathname) {
+      document.title = `${title.charAt(0).toUpperCase() + title.slice(1)} | bartue.dev`
+    }
+
+    return () => {
+       document.title = "bartue.dev"
+    }
+  },[pathname])
 
   return (
     <div className="sticky top-3 z-1">
