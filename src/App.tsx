@@ -9,7 +9,7 @@ function App() {
       <ScrollToTop/>
       <div className="bg-white w-[90%] min-h-screen flex flex-col justify-between text-gray-600 py-3 m-auto">
         <Navbar/>
-        <div className="px-60 mt-15">
+        <div className="px-60 justify-items-center">
           <Outlet/>
         </div>
         <Footer/>
