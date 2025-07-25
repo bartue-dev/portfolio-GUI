@@ -1,12 +1,12 @@
 import { projects } from  "../../data/data"
-import { type ProjectTypes } from "../../lib/types"
-import { Link } from 'lucide-react';
+import { Link as LinkIcon } from 'lucide-react';
+import { Link } from "react-router";
 
 export default function ProjectCard() {
 
   return (
     <div className="grid grid-cols-2 gap-5">
-      {projects.map((project: ProjectTypes, i: number) => (
+      {projects.map((project, i: number) => (
         <div 
           key={i} 
           className="w-90 min-h-80 rounded-md shadow border border-gray-100 flex flex-col gap-5 p-4 hover:shadow-md hover:border-gray-200"
@@ -39,12 +39,14 @@ export default function ProjectCard() {
                 </div>} 
         </div>
 
-        <div className="flex items-center gap-3">
-          <Link 
+        <Link to={`/projects/${project.id}`}
+          className="flex items-center gap-3"
+        >
+          <LinkIcon
             size={15}
           />
           <h1 className="text-sm">View Project</h1>
-        </div>
+        </Link>
          
           
         </div>
