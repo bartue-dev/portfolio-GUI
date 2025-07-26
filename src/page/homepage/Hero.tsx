@@ -1,18 +1,25 @@
+import Socials from "../../common/Socials";
 
 export default function Hero() {
 
   return (
     <div className="flex justify-start items-center gap-10 mt-15">
-      <div className="h-40 w-40 rounded-full">
+      <div className="w-40 justify-items-center">
         <img 
           src="/profile.png" 
           alt="Profile-photo"
           className="w-full h-full rounded-full object-cover"   
         />
+
+        <Socials size="xl" />
         </div>
         <div>
-          <h1 className="font-semibold text-2xl">Bartue.dev | Software Developer</h1>
-          <p className="text-base mt-2">I am a Software developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma</p>
+          <h1 className="font-semibold text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
+          <p 
+            className="text-base mt-2"
+          >
+            I am a Software developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma
+          </p>
           
           <div className="flex items-center gap-3 mt-3">
               
