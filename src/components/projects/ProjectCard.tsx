@@ -5,11 +5,11 @@ import { Link } from "react-router";
 export default function ProjectCard() {
 
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="grid gap-5 sm:grid-cols-1 sm:place-self-center lg:grid-cols-2">
       {projects.map((project, i: number) => (
         <div 
           key={i} 
-          className="w-90 min-h-80 rounded-md shadow border border-gray-100 flex flex-col gap-5 p-4 hover:shadow-md hover:border-gray-200"
+          className="min-h-80 rounded-md shadow border border-gray-100 flex flex-col gap-5 p-4 hover:shadow-md hover:border-gray-200"
         >
 
         {(project?.images ?? []).length > 0
