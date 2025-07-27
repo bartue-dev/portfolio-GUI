@@ -22,7 +22,7 @@ export default function About() {
           </a>
         </div>
       </div>
-      <div className="w-90 relative">
+      <div className="w-90  relative hidden lg:block">
         <img src="/SD2.jpg" alt="image" className="w-full rotate-4 rounded-md" />
         <img src="/SD1.jpg" alt="image" className="w-full rotate-4 rounded-md absolute top-25 -right-15" />
       </div>
