@@ -3,8 +3,8 @@ import Socials from "../../common/Socials";
 export default function Hero() {
 
   return (
-    <div className="flex justify-start items-center gap-10 mt-15">
-      <div className="w-40 justify-items-center">
+    <div className="flex justify-start items-center gap-10 mt-15 place-self-center">
+      <div className="w-40 justify-items-center hidden lg:block">
         <img 
           src="/profile.png" 
           alt="Profile-photo"
@@ -13,6 +13,7 @@ export default function Hero() {
 
         <Socials size="xl" />
         </div>
+        
         <div>
           <h1 className="font-semibold text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
           <p 
