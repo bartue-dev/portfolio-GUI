@@ -73,6 +73,7 @@ export default function Contact() {
         <h1 className="text-4xl font-bold text-gray-700">Get in Touch</h1>
         <p className="mt-4">Thank you for your interest in getting in touch with me. I'm always excited to connect with new people. Please feel free to reach out using any of the methods below, and I'll do my best to respond to your message within 24 hours. I look forward to hearing from you and learning more about how we might work together.</p>
       </div>
+
       <div className='flex items-center gap-2 mt-4'>     
         <a href="https://www.linkedin.com/in/bart-batiancila-316a52322/" target="_blank" className='tooltip' data-tip="linkedin">
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
@@ -81,9 +82,10 @@ export default function Contact() {
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </a>
       </div>
+
       <form 
         ref={formRef}
-        className="grid grid-cols-2 w-100 gap-2 mt-4"
+        className="grid grid-cols-2 w-full sm:w-100 gap-2 mt-4"
         onSubmit={onSubmit}
       >
         <div>
