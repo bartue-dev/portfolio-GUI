@@ -15,9 +15,9 @@ export default function Hero() {
         </div>
         
         <div>
-          <h1 className="font-semibold text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
+          <h1 className="font-semibold text-sm sm:text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
           <p 
-            className="text-base mt-2"
+            className="text-sm sm:text-base mt-2"
           >
             I am a Software developer with expertise <br/> in Typescript, React, Nodejs, Express, PostgreSQL, Prisma
           </p>
@@ -26,44 +26,41 @@ export default function Hero() {
               
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
-              className="w-10"  
+              className="w-6 sm:w-10"  
             />
           
 
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" 
-              className="w-10"
+              className="w-6 sm:w-10"
             />
 
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-              className="w-10"
+              className="w-6 sm:w-10"
             />
   
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" 
-              className="w-12"
+              className="w-6 sm:w-12"
             />
           
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" 
-              className="w-10"  
+              className="w-6 sm:w-10"  
             />
             
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" 
-              className="w-10"
+              className="w-6 sm:w-10"
             />
             
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" 
-              className="w-10"
+              className="w-6 sm:w-10"
             />
           
-          </div>
-          
-          
-          
+          </div> 
         </div>
     </div>
   )
