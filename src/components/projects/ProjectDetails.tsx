@@ -32,9 +32,9 @@ export default function ProjectDetails() {
         .filter(project => project.id === Number(projectId))
         .map(project => (
           <div key={project.id}>
-            <h1 className="text-2xl font-bold italic">{project.title.toUpperCase()}</h1>
+            <h1 className="text-xl sm:text-2xl font-bold italic">{project.title.toUpperCase()}</h1>
             
-            <p className="mt-2"> {project.about} </p>
+            <p className="mt-2 text-xs sm:text-base"> {project.about} </p>
 
             <div className="flex items-center gap-2 mt-2">
               <h1 className="font-semibold italic">Built with:</h1>
