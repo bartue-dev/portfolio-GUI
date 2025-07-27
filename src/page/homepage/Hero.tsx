@@ -15,7 +15,7 @@ export default function Hero() {
         </div>
         
         <div>
-          <h1 className="font-semibold text-sm sm:text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
+          <h1 className="font-semibold text-xl sm:text-2xl text-gray-700">Bartue.dev | Software Developer</h1>
           <p 
             className="text-sm sm:text-base mt-2"
           >
