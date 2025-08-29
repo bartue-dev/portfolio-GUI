@@ -57,7 +57,8 @@ export default function ProjectDetails() {
             <div className="flex flex-col justify-center mt-3">
                 {project?.code?.frontend && <a href={project?.code?.frontend} target="_blank" className="link w-fit">frontend repo</a>}
                 {project?.code?.backend && <a href={project?.code?.backend} target="_blank" className="link w-fit">backend repo</a>}
-              </div>
+                {project?.demo && <a href={project?.demo?.link} target="_blank" className="link w-fit"> demo link</a>}
+            </div>
 
             {(project?.images ?? []).length > 0
               ? <div className="relative w-full h-90 shadow-md border border-gray-200 rounded-md mt-5">
