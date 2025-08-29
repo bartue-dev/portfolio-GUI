@@ -1,11 +1,9 @@
 import { 
   Clock,
-  CheckCircle2,
   Play,
   ArrowRight,
   Code,
   Database,
-  Globe,
   Zap,
   CircleCheckBig 
 } from "lucide-react";
