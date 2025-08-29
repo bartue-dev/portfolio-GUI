@@ -39,6 +39,13 @@ export default function Hero() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               className="w-6 sm:w-10"
             />
+
+            
+            <img 
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
+              className="w-6 sm:w-10"
+            />
+          
   
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" 
