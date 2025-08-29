@@ -1,4 +1,14 @@
-import { Clock, CheckCircle2, Play, ArrowRight, Code, Database, Globe, Zap } from "lucide-react";
+import { 
+  Clock,
+  CheckCircle2,
+  Play,
+  ArrowRight,
+  Code,
+  Database,
+  Globe,
+  Zap,
+  CircleCheckBig 
+} from "lucide-react";
 
 export default function Activity() {
   return (
@@ -17,40 +27,48 @@ export default function Activity() {
             <Play className="w-6 h-6 text-green-600" />
             <h2 className="text-2xl font-semibold">Current Project</h2>
           </div>
-          
+
           <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
+            <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Student Attendance Management System
+                    Car Rental Project
                   </h3>
-                  <div className="flex items-center gap-2 text-green-100">
+                  <div className="flex items-center gap-2 text-purple-100">
                     <Clock className="w-4 h-4" />
                     <span>In Progress</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-full p-3">
-                  <Database className="w-6 h-6 text-white" />
+                  <Code className="w-6 h-6 text-white" />
                 </div>
               </div>
             </div>
             
             <div className="p-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg border border-green-200">
-                  <CheckCircle2 className="w-5 h-5 text-green-600" />
+              <div className="space-y-3">
+                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                  <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
                   <div>
-                    <p className="font-medium text-green-800">Backend</p>
-                    <p className="text-sm text-green-600">Completed</p>
+                    <p className="font-medium text-gray-800">TypeScript Migration</p>
+                    <p className="text-sm text-gray-600">Refactor codebase to TypeScript for better type safety</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                  <Globe className="w-5 h-5 text-blue-600" />
+                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                  <Zap className="w-5 h-5 text-indigo-600 mt-0.5" />
                   <div>
-                    <p className="font-medium text-blue-800">Client</p>
-                    <p className="text-sm text-blue-600">In Development</p>
+                    <p className="font-medium text-gray-800">Performance Optimization</p>
+                    <p className="text-sm text-gray-600">Implement Redux and React Query for better state management and data fetching</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                  <CircleCheckBig className="w-5 h-5 text-indigo-600 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-gray-800">Proper validation implementation</p>
+                    <p className="text-sm text-gray-600">Zod and React Hook form for better api and form validation</p>
                   </div>
                 </div>
               </div>
@@ -66,42 +84,33 @@ export default function Activity() {
           </div>
           
           <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Car Rental Project
+                    Student Attendance Management System
                   </h3>
-                  <div className="flex items-center gap-2 text-purple-100">
+                  <div className="flex items-center gap-2 text-green-100">
                     <Clock className="w-4 h-4" />
                     <span>Planned</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-full p-3">
-                  <Code className="w-6 h-6 text-white" />
+                  <Database className="w-6 h-6 text-white" />
                 </div>
               </div>
             </div>
             
             <div className="p-6">
               <h4 className="font-semibold mb-3">Planned Improvements</h4>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                  <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-gray-800">TypeScript Migration</p>
-                    <p className="text-sm text-gray-600">Refactor codebase to TypeScript for better type safety</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                  <Zap className="w-5 h-5 text-indigo-600 mt-0.5" />
-                  <div>
-                    <p className="font-medium">Performance Optimization</p>
-                    <p className="text-sm text-gray-600">Implement Redux and React Query for better state management and data fetching</p>
-                  </div>
+              <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
+                <div>
+                  <p className="font-medium text-gray-800">Project Enhancement</p>
+                  <p className="text-sm text-gray-600">Add more features to make it a full student management system</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
