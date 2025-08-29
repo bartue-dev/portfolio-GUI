@@ -11,6 +11,7 @@ export type ProjectTypes = {
   status?: string
   link?: string,
   images?: string[]
+  demo?: {link: string}
 }
 
 export type LinksTypes = {
