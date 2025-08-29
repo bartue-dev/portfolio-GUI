@@ -38,7 +38,6 @@ export const projects: ProjectTypes[] = [
         frontend: "https://github.com/bartue-dev/car_rental/blob/main/README.md",
         backend: "https://github.com/bartue-dev/car-rental-api/blob/main/README.md"
       },
-      status: "ongoing",
       images: [
         "car-rental-06.PNG",
         "car-rental-02.PNG",
@@ -55,26 +54,36 @@ export const projects: ProjectTypes[] = [
     },
     {
       id: 2,
-      title: "File Uploader",
-      about: "Basically a file manager. Uses supabase storage to store files, with this approach files can be access from any device as long as there's an internet connection. No frontend Framework used. Uses EJS for Server Side Rendering",
+      title: "Student Attendance Management",
+      about: "The purpose of building this app is to practice Typescript, Redux, Zod and React hook form. Typescript for proper typing. Redux for setting up the authentication and query using the RTK. Zod for validation. React hook form for handling the forms",
+      frontend: [
+        {src: "icons8-react-js-48.png", tip: "react-js"},
+        {src: "icons8-redux-48.png", tip: "redux"},
+        {src: "zod-2.jpg", tip: "zod"},
+        {src: "react-hook-form-logo-only.png", tip: "react-hook-form"},
+        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+        {src: "shadcn.png", tip: "shadcn"},
+      ],
       backend: [
         {src: "icons8-express-js-50.png", tip: "express-js"},
         {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
-        {src: "icons8-supabase-48.png", tip: "supabase-storage"},
-        {src: "passport-seeklogo.png", tip: "passport-js"},
-        {src: "express-validator.svg", tip: "express-validator"},
-        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+        {src: "icons8-jwt-48.png", tip: "jsonwebtoken"},
+        {src: "express-validator.svg", tip: "express-validator"}
       ],
-      code:{
-        backend: "https://github.com/bartue-dev/file-uploader/blob/main/README.md"
+      code: {
+        frontend: "https://github.com/bartue-dev/studma-client",
+        backend: "https://github.com/bartue-dev/studma-server"
       },
       images: [
-        "file-uploader-02.PNG",
-        "file-uploader-01.PNG",
-        "file-uploader-03.PNG",
-        "file-uploader-04.PNG",
-        "file-uploader-05.PNG"
-      ]
+        "studma1.PNG",
+        "studma2.PNG",
+        "studma3.PNG",
+        "studma4.PNG",
+        "studma5.PNG",
+        "studma6.PNG",
+
+      ],
+      demo: {link: "https://www.youtube.com/watch?v=jbKYT4xEpEY"}
     },
     {
       id: 3,
@@ -107,5 +116,28 @@ export const projects: ProjectTypes[] = [
         backend: "https://github.com/bartue-dev/blog_api/blob/main/README.md",
       },
       images: []
+    },
+    {
+      id: 5,
+      title: "File Uploader",
+      about: "Basically a file manager. Uses supabase storage to store files, with this approach files can be access from any device as long as there's an internet connection. No frontend Framework used. Uses EJS for Server Side Rendering",
+      backend: [
+        {src: "icons8-express-js-50.png", tip: "express-js"},
+        {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
+        {src: "icons8-supabase-48.png", tip: "supabase-storage"},
+        {src: "passport-seeklogo.png", tip: "passport-js"},
+        {src: "express-validator.svg", tip: "express-validator"},
+        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+      ],
+      code:{
+        backend: "https://github.com/bartue-dev/file-uploader/blob/main/README.md"
+      },
+      images: [
+        "file-uploader-02.PNG",
+        "file-uploader-01.PNG",
+        "file-uploader-03.PNG",
+        "file-uploader-04.PNG",
+        "file-uploader-05.PNG"
+      ]
     }
 ]
