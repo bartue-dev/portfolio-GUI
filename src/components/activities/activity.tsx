@@ -27,6 +27,54 @@ export default function Activity() {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    Student Attendance Management System
+                  </h3>
+                  <div className="flex items-center gap-2 text-green-100">
+                    <Clock className="w-4 h-4" />
+                    <span>Planned</span>
+                  </div>
+                </div>
+                <div className="bg-white/20 rounded-full p-3">
+                  <Database className="w-6 h-6 text-white" />
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-6">
+              <h4 className="font-semibold mb-3">Planned Improvements</h4>
+              <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
+                <div>
+                  <p className="font-medium text-gray-800">Project Enhancement</p>
+                  <p className="text-sm text-gray-600">Add more features to make it a full student management system</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        {/* Next Project */}
+        {/* <div>
+          <div className="flex items-center gap-3 mb-4">
+            <ArrowRight className="w-6 h-6 text-purple-600" />
+            <h2 className="text-2xl font-semibold">Up Next</h2>
+          </div>
+          
+        </div> */}
+
+        {/* Next Project */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <ArrowRight className="w-6 h-6 text-purple-600" />
+            <h2 className="text-2xl font-semibold">Completed</h2>
+          </div>
+          
+          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
             <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
               <div className="flex items-start justify-between">
                 <div>
@@ -35,7 +83,7 @@ export default function Activity() {
                   </h3>
                   <div className="flex items-center gap-2 text-purple-100">
                     <Clock className="w-4 h-4" />
-                    <span>In Progress</span>
+                    <span>Completed</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-full p-3">
@@ -70,45 +118,6 @@ export default function Activity() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Next Project */}
-        <div>
-          <div className="flex items-center gap-3 mb-4">
-            <ArrowRight className="w-6 h-6 text-purple-600" />
-            <h2 className="text-2xl font-semibold">Up Next</h2>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">
-                    Student Attendance Management System
-                  </h3>
-                  <div className="flex items-center gap-2 text-green-100">
-                    <Clock className="w-4 h-4" />
-                    <span>Planned</span>
-                  </div>
-                </div>
-                <div className="bg-white/20 rounded-full p-3">
-                  <Database className="w-6 h-6 text-white" />
-                </div>
-              </div>
-            </div>
-            
-            <div className="p-6">
-              <h4 className="font-semibold mb-3">Planned Improvements</h4>
-              <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
-                <div>
-                  <p className="font-medium text-gray-800">Project Enhancement</p>
-                  <p className="text-sm text-gray-600">Add more features to make it a full student management system</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
