@@ -26,13 +26,17 @@ export const projects: ProjectTypes[] = [
       about: "Car Rental App is a Full Stack project. User/Admin app, User able to navigate throught the availble vehicle then book whatever available vehicle and can create testimonials about the service of the business. Admin monitor the data of the business. Add more vehicle, Update the existing Vehicle or Delete Vehicle. Admin can also Add bookings, Update existing bookings and Delete booking. Lastly Admin can select a testimonials created by the user to display in the client side of the website. ",
       frontend: [
         {src: "icons8-react-js-48.png", tip: "react-js"},
-        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"}
+        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+        {src: "icons8-redux-48.png", tip: "redux"},
+        {src: "zod-2.jpg", tip: "zod"},
+        {src: "react-hook-form-logo-only.png", tip: "react-hook-form"},
+        {src: "shadcn.png", tip: "shadcn"},
       ],
       backend: [
         {src: "icons8-express-js-50.png", tip: "express-js"},
         {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
         {src: "icons8-jwt-48.png", tip: "jsonwebtoken"},
-        {src: "express-validator.svg", tip: "express-validator"}  
+        {src: "express-validator.svg", tip: "express-validator"}
       ],
       code:{
         frontend: "https://github.com/bartue-dev/car_rental/blob/main/README.md",
