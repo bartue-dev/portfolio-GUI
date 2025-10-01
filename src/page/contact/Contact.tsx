@@ -81,7 +81,7 @@ export default function Contact() {
         <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" className='tooltip' data-tip="email">
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </a>
-        <div className="text-xl">or message / call me in <span className="font-bold">09105359425</span></div>
+        <div className="text-base">or message / call me in <span className="font-bold">09105359425</span></div>
       </div>
 
       <form 
