@@ -50,7 +50,8 @@ export const projects: ProjectTypes[] = [
         "car-rental-10.PNG",
         "car-rental-11.PNG",
         "car-rental-12.PNG",
-      ]
+      ],
+      demo: {link: "https://youtu.be/JHsz0zbWNy4"}
     },
     {
       id: 2,
