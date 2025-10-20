@@ -58,39 +58,65 @@ export const projects: ProjectTypes[] = [
       ],
       demo: {link: "https://youtu.be/JHsz0zbWNy4"}
     },
-    {
-      id: 2,
-      title: "Student Attendance Management",
-      about: "The purpose of building this app is to practice Typescript, Redux, Zod and React hook form. Typescript for proper typing. Redux for setting up the authentication and query using the RTK. Zod for validation. React hook form for handling the forms",
+     {
+      id: 4,
+      title: "REPOST",
+      about: "REPOST is a full stack blog project. In progress...",
       frontend: [
         {src: "icons8-react-js-48.png", tip: "react-js"},
-        {src: "icons8-redux-48.png", tip: "redux"},
+        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+        {src: "React-Query-Icon--Streamline-Svg-Logos.png", tip: "react-query"},
         {src: "zod-2.jpg", tip: "zod"},
         {src: "react-hook-form-logo-only.png", tip: "react-hook-form"},
-        {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
         {src: "shadcn.png", tip: "shadcn"},
       ],
       backend: [
         {src: "icons8-express-js-50.png", tip: "express-js"},
         {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
-        {src: "icons8-jwt-48.png", tip: "jsonwebtoken"},
-        {src: "express-validator.svg", tip: "express-validator"}
+        {src: "express-validator.svg", tip: "express-validator"},
+        {src: "better-auth-logo-dark.136b122f.png", tip: "better-auth"},
       ],
-      code: {
-        frontend: "https://github.com/bartue-dev/studma-client",
-        backend: "https://github.com/bartue-dev/studma-server"
-      },
-      images: [
-        "studma1.PNG",
-        "studma2.PNG",
-        "studma3.PNG",
-        "studma4.PNG",
-        "studma5.PNG",
-        "studma6.PNG",
+      code:{
+        frontend: "https://github.com/bartue-dev/repost",
+        backend: "https://github.com/bartue-dev/repost-server/blob/main/README.md",
 
-      ],
-      demo: {link: "https://www.youtube.com/watch?v=jbKYT4xEpEY"}
+        //
+      },
+      images: []
     },
+    // {
+    //   id: 2,
+    //   title: "Student Attendance Management",
+    //   about: "The purpose of building this app is to practice Typescript, Redux, Zod and React hook form. Typescript for proper typing. Redux for setting up the authentication and query using the RTK. Zod for validation. React hook form for handling the forms",
+    //   frontend: [
+    //     {src: "icons8-react-js-48.png", tip: "react-js"},
+    //     {src: "icons8-redux-48.png", tip: "redux"},
+    //     {src: "zod-2.jpg", tip: "zod"},
+    //     {src: "react-hook-form-logo-only.png", tip: "react-hook-form"},
+    //     {src: "icons8-tailwind-css-48.png", tip: "tailwind-css"},
+    //     {src: "shadcn.png", tip: "shadcn"},
+    //   ],
+    //   backend: [
+    //     {src: "icons8-express-js-50.png", tip: "express-js"},
+    //     {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
+    //     {src: "icons8-jwt-48.png", tip: "jsonwebtoken"},
+    //     {src: "express-validator.svg", tip: "express-validator"}
+    //   ],
+    //   code: {
+    //     frontend: "https://github.com/bartue-dev/studma-client",
+    //     backend: "https://github.com/bartue-dev/studma-server"
+    //   },
+    //   images: [
+    //     "studma1.PNG",
+    //     "studma2.PNG",
+    //     "studma3.PNG",
+    //     "studma4.PNG",
+    //     "studma5.PNG",
+    //     "studma6.PNG",
+
+    //   ],
+    //   demo: {link: "https://www.youtube.com/watch?v=jbKYT4xEpEY"}
+    // },
     {
       id: 3,
       title: "Cv Generator App",
@@ -107,21 +133,6 @@ export const projects: ProjectTypes[] = [
         "cv-generator-02.PNG",
         "cv-generator-03.PNG",
       ]
-    },
-    {
-      id: 4,
-      title: "Blog API",
-      about: "Practice building a REST API. Used jsonwebtoken(jwt) for authentication and prisma orm for database schema and queries",
-      backend: [
-        {src: "icons8-express-js-50.png", tip: "express-js"},
-        {src: "icons8-prisma-orm-48.png", tip: "prisma-orm"},
-        {src: "icons8-jwt-48.png", tip: "jsonwebtoken"},
-        {src: "express-validator.svg", tip: "express-validator"},
-      ],
-      code:{
-        backend: "https://github.com/bartue-dev/blog_api/blob/main/README.md",
-      },
-      images: []
     },
     {
       id: 5,
