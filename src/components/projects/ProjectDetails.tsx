@@ -102,7 +102,7 @@ export default function ProjectDetails() {
                     <img 
                       src={`/${(project?.images ?? [])[slideIndex]}`} 
                       alt="project-image"
-                      className="w-full h-full object-cover rounded-md cursor-pointer"
+                      className="w-full h-full object-cover rounded-md cursor-pointer hover:shadow-md"
                       onClick={openImage}
                     />
                     <button
