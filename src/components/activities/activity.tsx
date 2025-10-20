@@ -5,7 +5,8 @@ import {
   Code,
   Database,
   Zap,
-  CircleCheckBig 
+  CircleCheckBig, 
+  Cog
 } from "lucide-react";
 
 export default function Activity() {
@@ -31,11 +32,11 @@ export default function Activity() {
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Student Attendance Management System
+                    Repost
                   </h3>
                   <div className="flex items-center gap-2 text-green-100">
                     <Clock className="w-4 h-4" />
-                    <span>Planned</span>
+                    <span>In Progress</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-full p-3">
@@ -49,8 +50,16 @@ export default function Activity() {
               <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
                 <Code className="w-5 h-5 text-indigo-600 mt-0.5" />
                 <div>
-                  <p className="font-medium text-gray-800">Project Enhancement</p>
-                  <p className="text-sm text-gray-600">Add more features to make it a full student management system</p>
+                  <p className="font-medium text-gray-800">Typescript Migration</p>
+                  <p className="text-sm text-gray-600">Refractor the backend into typescript - <span className="font-bold">DONE</span></p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                <Cog className="w-5 h-5 text-indigo-600 mt-0.5" />
+                <div>
+                  <p className="font-medium text-gray-800">Build front-end</p>
+                  <p className="text-sm text-gray-600">Build Front-end using react-vite typescript</p>
                 </div>
               </div>
 
